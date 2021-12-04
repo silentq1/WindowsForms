@@ -41,5 +41,32 @@ namespace WinBackgroundWorker
                 backgroundWorker1.ReportProgress((int)(j * 100 / i));
             }
         }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = e.ProgressPercentage;
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (!(e.Cancelled))
+                System.Windows.Forms.MessageBox.Show("Run Completed!");
+            else
+                System.Windows.Forms.MessageBox.Show("Run Cancelled");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(!(textBox1.Text == ""))
+            {
+                int i = int.Parse(textBox1.Text);
+                backgroundWorker1.RunWorkerAsync(i);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            backgroundWorker1.CancelAsync();
+        }
     }
 }
