@@ -35,6 +35,15 @@ namespace WinAsynchDelegate
                 if (Cancel)
                     break;
             }
+            if (Cancel)
+            {
+                System.Windows.Forms.MessageBox.Show("Cancelled");
+                Cancel = false;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Complete");
+            }
         }
 
         private delegate void TimeConsumingMethodDelegate(int seconds);
@@ -50,6 +59,17 @@ namespace WinAsynchDelegate
             {
                 progressBar1.Value = val;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimeConsumingMethodDelegate del = new TimeConsumingMethodDelegate(TimeConsumingMethod);
+            del.BeginInvoke(int.Parse(textBox1.Text), null, null);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Cancel = true;
         }
     }
 }
