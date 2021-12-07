@@ -48,6 +48,10 @@ namespace WinAsynchMethod
             AsyncCallback cb = new AsyncCallback(CallBackMethod);
             summdelegate.BeginInvoke(a, b, cb, summdelegate);
         }
-        
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this,helpProvider1.HelpNamespace);
+        }
     }
 }

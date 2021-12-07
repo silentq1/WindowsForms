@@ -35,6 +35,7 @@
             this.txbA = new System.Windows.Forms.TextBox();
             this.txbB = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblA
@@ -100,11 +101,22 @@
             // 
             this.helpProvider1.HelpNamespace = "C:\\Users\\gleb\\Desktop\\Практика по ПМ.01\\WindowsForms\\help.docx";
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(321, 128);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 23);
+            this.btnHelp.TabIndex = 6;
+            this.btnHelp.Text = "Помощь";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 161);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.txbB);
             this.Controls.Add(this.txbA);
             this.Controls.Add(this.btnWork);
@@ -131,6 +143,7 @@
         private System.Windows.Forms.TextBox txbA;
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
 
