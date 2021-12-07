@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//q
 namespace WinAsynchMethod
 {
     public partial class Form1 : Form
@@ -48,6 +48,10 @@ namespace WinAsynchMethod
             AsyncCallback cb = new AsyncCallback(CallBackMethod);
             summdelegate.BeginInvoke(a, b, cb, summdelegate);
         }
-        
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this,helpProvider1.HelpNamespace);
+        }
     }
 }
