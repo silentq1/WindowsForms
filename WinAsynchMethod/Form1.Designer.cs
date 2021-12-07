@@ -34,6 +34,7 @@
             this.btnWork = new System.Windows.Forms.Button();
             this.txbA = new System.Windows.Forms.TextBox();
             this.txbB = new System.Windows.Forms.TextBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // lblA
@@ -75,8 +76,10 @@
             // 
             // txbA
             // 
+            this.helpProvider1.SetHelpString(this.txbA, "For input integer A");
             this.txbA.Location = new System.Drawing.Point(88, 24);
             this.txbA.Name = "txbA";
+            this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 20);
             this.txbA.TabIndex = 4;
             // 
@@ -113,6 +116,7 @@
         private System.Windows.Forms.Button btnWork;
         private System.Windows.Forms.TextBox txbA;
         private System.Windows.Forms.TextBox txbB;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
