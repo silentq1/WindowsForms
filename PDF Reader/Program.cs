@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PDF_Reader
-{
+{//q
     internal static class Program
     {
         /// <summary>
