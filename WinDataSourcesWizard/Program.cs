@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PDF_Reader
-{//q
+namespace WinDataSourcesWizard
+{
     internal static class Program
     {
         /// <summary>

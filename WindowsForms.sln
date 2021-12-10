@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchDelegate", "WinAsy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethod", "WinAsynchMethod\WinAsynchMethod.csproj", "{7ABA1399-601C-4B0A-850F-B05DED5C26E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinBD", "WinBD\WinBD.csproj", "{7210FA6F-60FC-4260-803B-EA92E71EE844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinDataSourcesWizard", "WinDataSourcesWizard\WinDataSourcesWizard.csproj", "{79459E47-C4DE-489C-BE9C-0261EFA92D09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{7ABA1399-601C-4B0A-850F-B05DED5C26E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ABA1399-601C-4B0A-850F-B05DED5C26E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ABA1399-601C-4B0A-850F-B05DED5C26E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7210FA6F-60FC-4260-803B-EA92E71EE844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7210FA6F-60FC-4260-803B-EA92E71EE844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7210FA6F-60FC-4260-803B-EA92E71EE844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7210FA6F-60FC-4260-803B-EA92E71EE844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79459E47-C4DE-489C-BE9C-0261EFA92D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79459E47-C4DE-489C-BE9C-0261EFA92D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79459E47-C4DE-489C-BE9C-0261EFA92D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79459E47-C4DE-489C-BE9C-0261EFA92D09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
