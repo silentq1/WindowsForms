@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label поставщикLabel;
+            System.Windows.Forms.Label код_поставщикаLabel;
+            System.Windows.Forms.Label адрес_поставщикаLabel;
+            System.Windows.Forms.Label телефонLabel;
             this.rBProductDataSet1 = new WinDataSourcesWizard.RBProductDataSet1();
             this.поставщикиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.поставщикиTableAdapter = new WinDataSourcesWizard.RBProductDataSet1TableAdapters.ПоставщикиTableAdapter();
@@ -52,6 +56,14 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.поставщикTextBox = new System.Windows.Forms.TextBox();
+            this.код_поставщикаTextBox = new System.Windows.Forms.TextBox();
+            this.адрес_поставщикаTextBox = new System.Windows.Forms.TextBox();
+            this.телефонTextBox = new System.Windows.Forms.TextBox();
+            поставщикLabel = new System.Windows.Forms.Label();
+            код_поставщикаLabel = new System.Windows.Forms.Label();
+            адрес_поставщикаLabel = new System.Windows.Forms.Label();
+            телефонLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingNavigator)).BeginInit();
@@ -214,7 +226,7 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.поставщикиDataGridView.DataSource = this.поставщикиBindingSource;
-            this.поставщикиDataGridView.Location = new System.Drawing.Point(93, 64);
+            this.поставщикиDataGridView.Location = new System.Drawing.Point(97, 61);
             this.поставщикиDataGridView.Name = "поставщикиDataGridView";
             this.поставщикиDataGridView.Size = new System.Drawing.Size(300, 220);
             this.поставщикиDataGridView.TabIndex = 1;
@@ -243,11 +255,87 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Телефон";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
+            // поставщикLabel
+            // 
+            поставщикLabel.AutoSize = true;
+            поставщикLabel.Location = new System.Drawing.Point(458, 103);
+            поставщикLabel.Name = "поставщикLabel";
+            поставщикLabel.Size = new System.Drawing.Size(68, 13);
+            поставщикLabel.TabIndex = 2;
+            поставщикLabel.Text = "Поставщик:";
+            // 
+            // поставщикTextBox
+            // 
+            this.поставщикTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.поставщикиBindingSource, "Поставщик", true));
+            this.поставщикTextBox.Location = new System.Drawing.Point(544, 100);
+            this.поставщикTextBox.Name = "поставщикTextBox";
+            this.поставщикTextBox.Size = new System.Drawing.Size(100, 20);
+            this.поставщикTextBox.TabIndex = 3;
+            // 
+            // код_поставщикаLabel
+            // 
+            код_поставщикаLabel.AutoSize = true;
+            код_поставщикаLabel.Location = new System.Drawing.Point(444, 66);
+            код_поставщикаLabel.Name = "код_поставщикаLabel";
+            код_поставщикаLabel.Size = new System.Drawing.Size(94, 13);
+            код_поставщикаLabel.TabIndex = 4;
+            код_поставщикаLabel.Text = "Код поставщика:";
+            // 
+            // код_поставщикаTextBox
+            // 
+            this.код_поставщикаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.поставщикиBindingSource, "Код поставщика", true));
+            this.код_поставщикаTextBox.Location = new System.Drawing.Point(544, 66);
+            this.код_поставщикаTextBox.Name = "код_поставщикаTextBox";
+            this.код_поставщикаTextBox.Size = new System.Drawing.Size(100, 20);
+            this.код_поставщикаTextBox.TabIndex = 5;
+            // 
+            // адрес_поставщикаLabel
+            // 
+            адрес_поставщикаLabel.AutoSize = true;
+            адрес_поставщикаLabel.Location = new System.Drawing.Point(432, 129);
+            адрес_поставщикаLabel.Name = "адрес_поставщикаLabel";
+            адрес_поставщикаLabel.Size = new System.Drawing.Size(106, 13);
+            адрес_поставщикаLabel.TabIndex = 6;
+            адрес_поставщикаLabel.Text = "Адрес поставщика:";
+            // 
+            // адрес_поставщикаTextBox
+            // 
+            this.адрес_поставщикаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.поставщикиBindingSource, "Адрес поставщика", true));
+            this.адрес_поставщикаTextBox.Location = new System.Drawing.Point(544, 126);
+            this.адрес_поставщикаTextBox.Name = "адрес_поставщикаTextBox";
+            this.адрес_поставщикаTextBox.Size = new System.Drawing.Size(100, 20);
+            this.адрес_поставщикаTextBox.TabIndex = 7;
+            // 
+            // телефонLabel
+            // 
+            телефонLabel.AutoSize = true;
+            телефонLabel.Location = new System.Drawing.Point(483, 155);
+            телефонLabel.Name = "телефонLabel";
+            телефонLabel.Size = new System.Drawing.Size(55, 13);
+            телефонLabel.TabIndex = 8;
+            телефонLabel.Text = "Телефон:";
+            // 
+            // телефонTextBox
+            // 
+            this.телефонTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.поставщикиBindingSource, "Телефон", true));
+            this.телефонTextBox.Location = new System.Drawing.Point(544, 152);
+            this.телефонTextBox.Name = "телефонTextBox";
+            this.телефонTextBox.Size = new System.Drawing.Size(100, 20);
+            this.телефонTextBox.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(телефонLabel);
+            this.Controls.Add(this.телефонTextBox);
+            this.Controls.Add(адрес_поставщикаLabel);
+            this.Controls.Add(this.адрес_поставщикаTextBox);
+            this.Controls.Add(код_поставщикаLabel);
+            this.Controls.Add(this.код_поставщикаTextBox);
+            this.Controls.Add(поставщикLabel);
+            this.Controls.Add(this.поставщикTextBox);
             this.Controls.Add(this.поставщикиDataGridView);
             this.Controls.Add(this.поставщикиBindingNavigator);
             this.Name = "Form1";
@@ -288,6 +376,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.TextBox поставщикTextBox;
+        private System.Windows.Forms.TextBox код_поставщикаTextBox;
+        private System.Windows.Forms.TextBox адрес_поставщикаTextBox;
+        private System.Windows.Forms.TextBox телефонTextBox;
     }
 }
 
